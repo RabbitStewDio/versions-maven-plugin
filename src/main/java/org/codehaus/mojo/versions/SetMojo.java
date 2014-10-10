@@ -111,6 +111,14 @@ public class SetMojo
     private boolean processParent;
 
     /**
+     * Whether to process the aggregation root of the project. If not set will default to false.
+     *
+     * @parameter expression="${processAggregationRoot}" default-value="false"
+     * @since 1.3
+     */
+    private boolean processAggregationRoot;
+
+    /**
      * Whether to process the project version. If not set will default to true.
      *
      * @parameter expression="${processProject}" default-value="true"
@@ -206,7 +214,7 @@ public class SetMojo
 
         try
         {
-            final MavenProject project = !processParent ? getProject():
+            final MavenProject project = !processAggregationRoot ? getProject():
                 PomHelper.getLocalRoot( projectBuilder, getProject(), localRepository, null, getLog() );
 
             getLog().info( "Local aggregation root: " + project.getBasedir() );
