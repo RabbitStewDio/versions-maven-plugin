@@ -13,6 +13,11 @@
       <name>monkeyrepo</name>
       <url>http://repo.rabbitstewdio.local/monkeyrepo</url>
     </repository>
+    <snapshotRepository>
+      <id>publish</id>
+      <name>monkeyrepo</name>
+      <url>http://repo.rabbitstewdio.local/monkeyrepo</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <groupId>com.rabbitstewdio.infrastructure</groupId>
