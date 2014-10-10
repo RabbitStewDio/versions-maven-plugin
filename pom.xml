@@ -7,6 +7,14 @@
     <version>32</version>
   </parent>
 
+  <distributionManagement>
+    <repository>
+      <id>publish</id>
+      <name>monkeyrepo</name>
+      <url>http://repo.rabbitstewdio.local/monkeyrepo</url>
+    </repository>
+  </distributionManagement>
+
   <groupId>com.rabbitstewdio.infrastructure</groupId>
   <artifactId>versions-maven-plugin</artifactId>
   <version>2.2-SNAPSHOT</version>
