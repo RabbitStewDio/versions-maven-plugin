@@ -22,7 +22,7 @@
 
   <groupId>com.rabbitstewdio.infrastructure</groupId>
   <artifactId>versions-maven-plugin</artifactId>
-  <version>2.2-SNAPSHOT</version>
+  <version>2.3.0</version>
   <packaging>maven-plugin</packaging>
 
   <name>Versions Maven Plugin</name>
